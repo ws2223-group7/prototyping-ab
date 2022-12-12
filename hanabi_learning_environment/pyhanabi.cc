@@ -15,7 +15,7 @@
 #include "pyhanabi.h"
 
 #include <cstdlib>
-#include <cstring>dsdlkspdvkposdvjposdkvsdv
+#include <cstring>
 
 
 #include <iostream>
