@@ -19,12 +19,16 @@ from hanabi_learning_environment.rl_env import Agent
 class SimpleAgent(Agent):
   """Agent that applies a simple heuristic."""
 
-  def __init__(self, config, *args, **kwargs):
+  def __init__(self, config, name, *args, **kwargs):
     """Initialize the agent."""
     self.config = config
     # Extract max info tokens or set default to 8.
     self.max_information_tokens = config.get('information_tokens', 8)
+    self.Name = name
 
+  def SayHello(self):
+      print('Hello from ', self.Name)
+   
   @staticmethod
   def playable_card(card, fireworks):
     """A card is playable if it can be placed on the fireworks pile."""
