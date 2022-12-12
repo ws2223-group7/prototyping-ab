@@ -5,7 +5,6 @@ currentPath = os.path.dirname(os.path.realpath(__file__))
 parentPath = os.path.dirname(currentPath)
 sys.path.append(parentPath)
 
-# importing
 from hanabi_learning_environment.agents.simple_agent import SimpleAgent
 
 from badagent import Bad_Agent
